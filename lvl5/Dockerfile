@@ -1,14 +1,14 @@
 FROM python:3
 
-WORKDIR /lvl2
+WORKDIR /lvl3
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV PORT=5000
+ENV PORT=7777
 
-EXPOSE 5000
+EXPOSE 7777
 
 CMD [ "python3", "./main.py" ]

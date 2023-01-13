@@ -7,8 +7,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV PORT=7777
+ENV PORT=1005
 
-EXPOSE 7777
+EXPOSE 1005
 
 CMD [ "python3", "./main.py" ]

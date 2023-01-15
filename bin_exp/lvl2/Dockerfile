@@ -1,14 +1,16 @@
 FROM python:3
 
-WORKDIR /lvl5
+WORKDIR /lvl1
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV PORT=1005
+RUN gcc main.c -o main
 
-EXPOSE 1005
+ENV PORT=1102
+
+EXPOSE 1102
 
 CMD [ "python3", "./main.py" ]

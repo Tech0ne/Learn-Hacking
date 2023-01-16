@@ -12,9 +12,9 @@ RUN useradd -rm -d /home/user -s /bin/bash -u 1000 user
 
 RUN echo 'user:superpassword' | chpasswd
 
-RUN echo "user ALL = (root) ALL" > /etc/sudoers.d/user
+RUN setcap cap_setuid+ep /usr/bin/python3
 
-RUN echo "flag{e97454f3336c2cbab7eba9e66f4ae24a}" > /passwd
+RUN echo "flag{46722dd32216ea2ec74abdf98e6cf1b4}" > /passwd
 
 RUN chown root:root /passwd
 

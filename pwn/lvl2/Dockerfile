@@ -12,9 +12,9 @@ RUN useradd -rm -d /home/user -s /bin/bash -u 1000 user
 
 RUN echo 'user:superpassword' | chpasswd
 
-RUN echo "user ALL = (root) ALL" > /etc/sudoers.d/user
+RUN chmod +s /usr/bin/tail
 
-RUN echo "flag{e97454f3336c2cbab7eba9e66f4ae24a}" > /passwd
+RUN echo "flag{5f65074b48ad8eed5645b376f2c483e0}" > /passwd
 
 RUN chown root:root /passwd
 

@@ -38,6 +38,10 @@ RUN chown root:root /passwd
 
 RUN chmod 400 /passwd
 
-EXPOSE 22
+ENV PORT=1403
+
+RUN echo "Port $PORT" >> /etc/ssh/sshd_config
+
+EXPOSE 1403
 
 CMD ["/etc/run_me.sh"]

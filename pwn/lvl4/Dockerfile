@@ -5,6 +5,7 @@ RUN apt-get install -y openssh-server
 RUN apt-get -y install sudo
 RUN apt-get -y install cron
 RUN apt-get -y install gcc
+RUN apt-get -y install vim
 
 RUN mkdir /var/run/sshd
 
@@ -26,6 +27,10 @@ RUN chown root:root /passwd
 
 RUN chmod 400 /passwd
 
-EXPOSE 22
+ENV PORT=1404
+
+RUN echo "Port $PORT" >> /etc/ssh/sshd_config
+
+EXPOSE 1404
 
 CMD ["/usr/sbin/sshd","-D"]

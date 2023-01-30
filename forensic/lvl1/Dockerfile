@@ -1,18 +1,14 @@
 FROM python:3
 
-WORKDIR /lvl3
+WORKDIR /lvl1
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN apt update
-
-RUN apt install -y iputils-ping
-
 COPY . .
 
-ENV PORT=1003
+ENV PORT=1201
 
-EXPOSE 1003
+EXPOSE 1201
 
 CMD [ "python3", "./main.py" ]

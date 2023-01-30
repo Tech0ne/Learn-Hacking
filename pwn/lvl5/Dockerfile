@@ -20,6 +20,10 @@ RUN chown root:root /passwd
 
 RUN chmod 400 /passwd
 
-EXPOSE 22
+ENV PORT=1405
+
+RUN echo "Port $PORT" >> /etc/ssh/sshd_config
+
+EXPOSE 1405
 
 CMD ["/usr/sbin/sshd","-D"]

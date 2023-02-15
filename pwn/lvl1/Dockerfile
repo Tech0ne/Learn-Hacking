@@ -24,7 +24,7 @@ ENV PORT=1401
 
 RUN echo "Port $PORT" >> /etc/ssh/sshd_config
 
-RUN systemctl restart sshd
+RUN service ssh start
 
 EXPOSE 1401
 

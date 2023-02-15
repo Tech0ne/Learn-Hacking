@@ -31,6 +31,8 @@ ENV PORT=1404
 
 RUN echo "Port $PORT" >> /etc/ssh/sshd_config
 
+RUN service ssh start
+
 EXPOSE 1404
 
 CMD ["/usr/sbin/sshd","-D"]

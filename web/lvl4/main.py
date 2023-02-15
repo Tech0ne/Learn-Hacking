@@ -16,7 +16,8 @@ def home():
 
 @app.route("/readme")
 def readme():
-    file = "some-data.txt"
+    if not request.args.get("file"):
+        return redirect("/readme?file=some-data.txt")
     if request.args.get("file"):
         file = request.args.get("file")
     return open_file(file)

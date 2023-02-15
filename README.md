@@ -4,7 +4,7 @@
 
 Here is a simple coding club subject, oriented Cyber Security.
 
-Pleas take note of how to use it :
+Please take notes of how to use it :
 
 ### Usage :
 

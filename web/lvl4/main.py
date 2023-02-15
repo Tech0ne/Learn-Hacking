@@ -18,9 +18,7 @@ def home():
 def readme():
     if not request.args.get("file"):
         return redirect("/readme?file=some-data.txt")
-    if request.args.get("file"):
-        file = request.args.get("file")
-    return open_file(file)
+    return open_file(request.args.get("file"))
 
 # I renamed the flag file to flags.data, they will never know, hehehe
 

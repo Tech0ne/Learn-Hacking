@@ -24,6 +24,7 @@ The port is a 4 digits number where :
 | forensic | 12   |
 | cracking | 13   |
 | pwn      | 14   |
+| stegano  | 15   |
 
 So, if you want to play the level 3 of pwn, the port will be 1403.
 

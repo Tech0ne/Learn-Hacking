@@ -30,8 +30,8 @@ So, if you want to play the level 3 of pwn, the port will be 1403.
 
 Once you got the port, you need to :
 
-  Go to the directory you want to run
-  Build the image with `docker build -t {image_name} .`
-  And run it with `docker run -p {the_port}:{the_port} {image_name}`
+    Go to the directory you want to run
+    Build the image with `docker build -t {image_name} .`
+    And run it with `docker run -p {the_port}:{the_port} {image_name}`
 
 Enjoy ;)

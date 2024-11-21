@@ -17,14 +17,15 @@ The port is a 4 digits number where :
 - Last 2 are given by the lvl nb (lvl 5 will be 05)
 
 
-| Domain   | code |
-|----------|------|
-| web      | 10   |
-| bin_exp  | 11   |
-| forensic | 12   |
-| cracking | 13   |
-| pwn      | 14   |
-| stegano  | 15   |
+| Domain    | code |
+|-----------|------|
+| web       | 10   |
+| reversing | 11   |
+| forensic  | 12   |
+| cracking  | 13   |
+| pwn       | 14   |
+| stegano   | 15   |
+| bin-exp   | 16   |
 
 So, if you want to play the level 3 of pwn, the port will be 1403.
 
